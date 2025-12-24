@@ -179,11 +179,11 @@ body::-webkit-inner-spin-button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100vw;
-	height: 100vh;
+	/* height: 100vh; */
 	z-index: 4;
 	box-sizing: border-box;
 	background-color: rgba(0, 0, 0, 0.4);
@@ -191,8 +191,8 @@ body::-webkit-inner-spin-button {
 
 .feedback-popup::before {
 	position: absolute;
- 	top: 0;
-  	left: 0;
+ 	bottom: 0;
+	right: 0;
  	width: 100%;
  	height: 100%;
   	background: rgba(0, 0, 0, 0.5); 
@@ -206,9 +206,9 @@ body::-webkit-inner-spin-button {
 	max-width: 390px;
 	width: 90%;
 	/* height: 589px; */
-	top: 234px;
+	top: 238px;
 	left: 7px;
-	padding: 32px 33px;
+	padding: 30px;
 	z-index: 3;
 	box-sizing: border-box;
 	background-color: #ffffff;
@@ -238,10 +238,11 @@ body::-webkit-inner-spin-button {
 	align-items: center;
 	color: #ffffff;
 	position: absolute;
-	right: -2px;
-	top: -45px;
+	right: -3px;
+	top: -40px;
 	z-index: 4;
-	font-size: 39px;
+	font-size: 41px;
+	line-height: 40px;
 	cursor: pointer;
 }
 
@@ -278,13 +279,14 @@ body::-webkit-inner-spin-button {
 }
 
 .feedback-question-two {
-	padding: 29px 0 7px 0;
+	/* padding: 29px 0 7px 0; */
+	margin: 30px 0 7px 0;
 }
 
 .radio-group {
 	padding-bottom: 29px;
 	display: flex;
-	gap: 16px;
+	gap: 17px;
 }
 
 .radio-group label {
@@ -301,8 +303,8 @@ body::-webkit-inner-spin-button {
 	top: 50%;
 	left: 0;
 	transform: translateY(-50%);
-  	width: 18px;
-  	height: 18px;
+  	width: 17px;
+  	height: 17px;
   	background-image: url(../svg/form-empty-circle.svg);
   	background-repeat: no-repeat;
   	background-size: contain;
@@ -1346,12 +1348,13 @@ body::-webkit-inner-spin-button {
 
 	.product-image {
 		width: 100%;
-		max-width: 298px;
+		max-width: 81%; /*298px*/
 		min-height: 227px;
 	}
 
 	.product-border {
 		outline-offset: 15px;
+		max-width: 84%;
 	}
 
 	.product-title {
@@ -1460,6 +1463,7 @@ body::-webkit-inner-spin-button {
   }
 
   .trend-border {
+	width: 100%;
     padding: 10px;
   }
 
